@@ -1,5 +1,7 @@
 # Signal Visualizer: introducing singal processing concepts into musical education
 
+## !Download and installation process described below.
+
 ## Description
 
 Signal Visualizer is an application for musical education. It aims to show which are the most used frequency analysis techniques in a visual and interactive way. This application allows the following functions:
@@ -15,7 +17,7 @@ It also contains user assistance and customization of the application.
 
 The following image shows an schema of the architecture of the application:
 
-<img src="architecture.png" alt="icons/architecture" width="400"/>
+<img src="icons/architecture.png" alt="icons/architecture" width="400"/>
 
 As depicted in the figure, the solution comprises a set of subsidiary modules that depend on a main module. Based on their functionality, the modules are classified into the following types:
 
@@ -55,30 +57,35 @@ Here you can find plots of the waveform, the amplitude envelope, a spectrogram a
 
 ## Installation
 
-**Download the zip from github.**
 
- * **For MacOS/Linux:**
- 	1. Place the "library" folder in the same folder as the Signal Visualizer.app (should be in the dist folder).
+* **For MacOS/Linux:**
+   1. Download the executable from the following link:
+   
+      https://ehubox.ehu.eus/s/pCewxd2jH3HF6xB?path=%2FMatt#
 
- 	2. Double click the icon.
+   2. Place the `library` folder in the same folder as `SignalVisualizer.app` (should be in the `dist` folder).
+   3. Double-click the icon.
 
- 	Possible errors:
- 		1. No microphone input. (has to do with the application not having microphone permissions)
- 			* Try using the "Record" before the "Tuner" module so the persmissions are granted.
- 			* Open the terminal, navigate to where the .app is saved and run this command (should be in the dist folder).
-			```bash
-			codesign --force --deep --sign - SignalVisualizer.app
-			```
-			* If this still doesnt work try running, with the application on the background, and then re-open the application.
-			```bash
-			tccutil reset Microphone 
-			```
+   * **Possible errors:**
+      1. **No microphone input** (this is usually due to the application not having microphone permissions).
+         * Try using the **"Record"** module before the **"Tuner"** module so that the permissions are granted.
+         * Open the terminal, navigate to where the `.app` is located (should be in the `dist` folder), and run the following command:
+            ```bash
+            codesign --force --deep --sign - SignalVisualizer.app
+            ```
+         * If this still doesn’t work, try running the following command with the application open in the background, then reopen the application:
+            ```bash
+            tccutil reset Microphone
+            ```
 
  * **For Windows:**
+   1. Download the executable from the following link:
+      
+      https://ehubox.ehu.eus/s/pCewxd2jH3HF6xB?path=%2FMatt#
 
-  	1. Place the "library" folder in the same folder as the Signal Visualizer.exe (should be in the dist folder).
+  	2. Place the "library" folder in the same folder as the `SignalVisualizer.exe` (should be in the dist folder).
 
- 	2. Double click the icon.
+ 	3. Double click the icon.
 
  * **In case you want to rebuild the app from source(!working with Python 3.13.3):**
 
