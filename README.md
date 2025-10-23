@@ -59,7 +59,7 @@ Here you can find plots of the waveform, the amplitude envelope, a spectrogram a
 
 
 * **For MacOS/Linux:**
-   1. Download the executable from the following link:
+   1. Download the entire "macOS" folder from the following link:
    
       https://ehubox.ehu.eus/s/pCewxd2jH3HF6xB?path=%2FMatt#
 
@@ -79,7 +79,7 @@ Here you can find plots of the waveform, the amplitude envelope, a spectrogram a
             ```
 
  * **For Windows:**
-   1. Download the executable from the following link:
+   1. Download entire "Windows" folder from the following link:
       
       https://ehubox.ehu.eus/s/pCewxd2jH3HF6xB?path=%2FMatt#
 
